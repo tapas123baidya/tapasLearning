@@ -1,0 +1,57 @@
+/* bluestyle.css */
+
+/* Define reusable blue color palette variables */
+:root {
+  --primary-blue: #0056b3;     /* Deep brand blue */
+  --light-blue: #e6f0fa;       /* Soft background tint */
+  --dark-blue: #001f3f;        /* High-contrast text blue */
+  --accent-blue: #00a8ff;      /* Bright link/highlight blue */
+  --white: #ffffff;
+}
+
+/* Base Body Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headings styled with primary blue */
+h1, h2, h3 {
+  color: var(--primary-blue);
+}
+
+/* Hyperlinks and Interactive States */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-blue);
+}
+
+/* Blue Themed Components */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue);
+}
